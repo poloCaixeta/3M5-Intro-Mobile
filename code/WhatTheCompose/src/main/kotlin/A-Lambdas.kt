@@ -20,6 +20,9 @@ fun comparerCroissant(a: Int, b: Int): Boolean = a < b
 fun main() {
     val tableau1 = arrayOf(52, 242, -8432, 120, 4)
     val tableau2 = arrayOf(5, 2, 8, -1, 1, 4)
+    val tableau3 = arrayOf(5, 55, -12, 2034)
+
+    triBulle(tableau3){a,b -> a.toString().length < b.toString().length}
 
     // Tri avec une lambda (ordre décroissant)
     triBulle(tableau1) { a, b -> a > b }
