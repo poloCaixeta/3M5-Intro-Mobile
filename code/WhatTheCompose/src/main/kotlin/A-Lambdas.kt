@@ -23,6 +23,7 @@ fun main() {
     val tableau3 = arrayOf(5, 55, -12, 2034)
 
     triBulle(tableau3){a,b -> a.toString().length < b.toString().length}
+    println("Tri nombre croissant en nombre de chiffres avec lambda: ${tableau3.joinToString()}")
 
     // Tri avec une lambda (ordre décroissant)
     triBulle(tableau1) { a, b -> a > b }
